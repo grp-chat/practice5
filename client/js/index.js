@@ -27,6 +27,7 @@ var userId6 = "JHA";
 var userId7 = "SZF";
 var userId8 = "JL";
 
+var resetServer = "";
 /* var team1 = ["LK", "JHA", "SZF"];
 var team2 = ["TJY", "LXR", "JL"]; */
 var otherUsers = ["TJY", "LXR", "JL", "LK", "JHA", "SZF", "H", "JV"];
