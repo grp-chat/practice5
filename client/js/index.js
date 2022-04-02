@@ -105,6 +105,12 @@ const promptMsg = () => {
     } else if (nick === '3839') {
         nickname = 'SZF'
         correctPin = true;
+    } else if (nick === '4048') {
+        nickname = 'H'
+        correctPin = true;
+    } else if (nick === '5691') {
+        nickname = 'JV'
+        correctPin = true;
     } else if (nick === '88888') {
         nickname = 'TCR'
         correctPin = true;
