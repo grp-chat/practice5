@@ -27,10 +27,10 @@ var userId6 = "JHA";
 var userId7 = "SZF";
 var userId8 = "JL";
 
-var team1 = ["LK", "JHA", "SZF"];
-var team2 = ["TJY", "LXR", "JL"];
-var otherUsers = ["TJY", "LXR", "JL", "LK", "JHA", "SZF"];
-var students = ["TJY", "LXR", "JL", "LK", "JHA", "SZF"];
+/* var team1 = ["LK", "JHA", "SZF"];
+var team2 = ["TJY", "LXR", "JL"]; */
+var otherUsers = ["TJY", "LXR", "JL", "LK", "JHA", "SZF", "H", "JV"];
+var students = ["TJY", "LXR", "JL", "LK", "JHA", "SZF", "H", "JV"];
 var rounds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 var nickname = '';
@@ -1209,10 +1209,10 @@ if (index > -1) {
 //alert(otherUsers);
 
 var grid = clickableGrid(3, 11, function (el, row, col, i) {
-    console.log("You clicked on element:", el);
+    /* console.log("You clicked on element:", el);
     console.log("You clicked on row:", row);
     console.log("You clicked on col:", col);
-    console.log("You clicked on item #:", i);
+    console.log("You clicked on item #:", i); */
 
     el.className = 'clicked';
     if (lastClicked) lastClicked.className = '';
@@ -1225,10 +1225,7 @@ var grid = clickableGrid(3, 11, function (el, row, col, i) {
 }, "tbl1", nickname);
 
 var grid2 = clickableGrid(3, 11, function (el, row, col, i) {
-    console.log("You clicked on element:", el);
-    console.log("You clicked on row:", row);
-    console.log("You clicked on col:", col);
-    console.log("You clicked on item #:", i);
+    
 
     el.className = 'clicked';
     if (lastClicked) lastClicked.className = '';
@@ -1241,11 +1238,7 @@ var grid2 = clickableGrid(3, 11, function (el, row, col, i) {
 }, "tbl2", otherUsers[0]);
 
 var grid3 = clickableGrid(3, 11, function (el, row, col, i) {
-    console.log("You clicked on element:", el);
-    console.log("You clicked on row:", row);
-    console.log("You clicked on col:", col);
-    console.log("You clicked on item #:", i);
-
+    
     el.className = 'clicked';
     if (lastClicked) lastClicked.className = '';
     lastClicked = el;
@@ -1257,10 +1250,7 @@ var grid3 = clickableGrid(3, 11, function (el, row, col, i) {
 }, "tbl3", otherUsers[1]);
 
 var grid4 = clickableGrid(3, 11, function (el, row, col, i) {
-    console.log("You clicked on element:", el);
-    console.log("You clicked on row:", row);
-    console.log("You clicked on col:", col);
-    console.log("You clicked on item #:", i);
+    
 
     el.className = 'clicked';
     if (lastClicked) lastClicked.className = '';
@@ -1273,10 +1263,7 @@ var grid4 = clickableGrid(3, 11, function (el, row, col, i) {
 }, "tbl4", otherUsers[2]);
 
 var grid5 = clickableGrid(3, 11, function (el, row, col, i) {
-    console.log("You clicked on element:", el);
-    console.log("You clicked on row:", row);
-    console.log("You clicked on col:", col);
-    console.log("You clicked on item #:", i);
+    
 
     el.className = 'clicked';
     if (lastClicked) lastClicked.className = '';
@@ -1289,10 +1276,7 @@ var grid5 = clickableGrid(3, 11, function (el, row, col, i) {
 }, "tbl5", otherUsers[3]);
 
 var grid6 = clickableGrid(3, 11, function (el, row, col, i) {
-    console.log("You clicked on element:", el);
-    console.log("You clicked on row:", row);
-    console.log("You clicked on col:", col);
-    console.log("You clicked on item #:", i);
+    
 
     el.className = 'clicked';
     if (lastClicked) lastClicked.className = '';
@@ -1304,12 +1288,35 @@ var grid6 = clickableGrid(3, 11, function (el, row, col, i) {
     } */
 }, "tbl6", otherUsers[4]);
 
+var grid8 = clickableGrid(3, 11, function (el, row, col, i) {
+    
+
+    el.className = 'clicked';
+    if (lastClicked) lastClicked.className = '';
+    lastClicked = el;
+    number = i
+
+    /* if (i == 15){
+        alert("play hit video")
+    } */
+}, "tbl8", otherUsers[5]);
+
+var grid9 = clickableGrid(3, 11, function (el, row, col, i) {
+    
+
+    el.className = 'clicked';
+    if (lastClicked) lastClicked.className = '';
+    lastClicked = el;
+    number = i
+
+    /* if (i == 15){
+        alert("play hit video")
+    } */
+}, "tbl9", otherUsers[6]);
+
 if (nickname === "TCR") {
     var grid7 = clickableGrid(3, 11, function (el, row, col, i) {
-        console.log("You clicked on element:", el);
-        console.log("You clicked on row:", row);
-        console.log("You clicked on col:", col);
-        console.log("You clicked on item #:", i);
+        
 
         el.className = 'clicked';
         if (lastClicked) lastClicked.className = '';
@@ -1319,7 +1326,7 @@ if (nickname === "TCR") {
         /* if (i == 15){
             alert("play hit video")
         } */
-    }, "tbl7", otherUsers[5]);
+    }, "tbl7", otherUsers[7]);
 }
 
 document.body.appendChild(grid);
@@ -1498,6 +1505,8 @@ bottomDiv.appendChild(grid3);
 bottomDiv.appendChild(grid4);
 bottomDiv.appendChild(grid5);
 bottomDiv.appendChild(grid6);
+bottomDiv.appendChild(grid8);
+bottomDiv.appendChild(grid9);
 
 if (nickname === "TCR") {
     bottomDiv.appendChild(grid7);

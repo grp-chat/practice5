@@ -58,7 +58,7 @@ var TJYWins = 0;
 var TJYChas = 1;
 var TJYRes = 0;
 
-var users = ["TJY", "LXR", "JL", "LK", "JHA", "SZF"];
+var users = ["TJY", "LXR", "JL", "LK", "JHA", "SZF", "H", "JV"];
 
 function Person(id, r1, p1, r2, p2, inOrOut) {
     this.id = id;
@@ -77,7 +77,9 @@ var objTJY = new Person("TJY", 0, 0, 0, 0, false);
 var objJHA = new Person("JHA", 0, 0, 0, 0, false);
 var objJL = new Person("JL", 0, 0, 0, 0, false);
 var objSZF = new Person("SZF", 0, 0, 0, 0, false);
-var objUsers = [objTJY, objLXR, objJL, objLK, objJHA, objSZF];
+var objH = new Person("H", 0, 0, 0, 0, false);
+var objJV = new Person("JV", 0, 0, 0, 0, false);
+var objUsers = [objTJY, objLXR, objJL, objLK, objJHA, objSZF, objH, objJV];
 
 //------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------
